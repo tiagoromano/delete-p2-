@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="relatorio" ruleName="relatorio" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
+  <metadata scale="1" scrollx="488.39999999999986" scrolly="-55.69999999999999" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <mutation>
+      <arg name="dataHora"/>
+    </mutation>
+    <field name="NAME">Executar</field>
+    <comment h="80" pinned="false" w="160">relatorio</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="VC=^9Ieb!t0H0!v8UtHT" multilayer="true" namespace="cronapi.util.openReport" origintype="procedures_openreport_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20Relat%C3%B3rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20responsavel%20por%20abrir%20um%20relat%C3%B3rio.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Relat%C3%B3rio%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.openReport%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.openReport%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_openreport_callnoreturn">
+        <mutation name="{{cronapi.util.openReport}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Relatório"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="datahora"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="AJ|sHd;Z4L*JsD53[B/#" origintype="util_report_list" output="true" type="util_report_list">
+            <mutation>
+              <arg name="" value=""/>
+            </mutation>
+            <field name="SELECT">reports/teste.report</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+R#S9y(yzh%8s.4Tnj{@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field name="VAR">dataHora</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#7d9137" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="|gpzU.nrKqiQD,E!:*UT" multilayer="false" namespace="cronapi.dateTime.formatDateTime" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFormatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20formatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%20:%20Data%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Formato%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.formatDateTime%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.formatDateTime%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" x="-112" y="323">
+    <mutation name="{{cronapi.dateTime.formatDateTime}}" return-raw-type="undefined">
+      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.DATETIME" name="Data"/>
+      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Formato"/>
+    </mutation>
+    <value name="ARG1">
+      <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="LYf11tSBS*t@6]yE/:@t" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field name="TEXT">DD/MM/YYYY HH:mm:ss</field>
+      </shadow>
+    </value>
+  </block>
+  <block asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="s[!3:x)^x}Dafpg#5P%s" origintype="text" output="true" tooltip="function () { [native code] }" type="text" x="158" y="443">
+    <field name="TEXT">05/01/2021 19:00:00</field>
+  </block>
+</blockly>
